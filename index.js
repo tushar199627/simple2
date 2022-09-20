@@ -16,7 +16,11 @@ const login_data = async function () {
     
     login_data.forEach(function(data){
         console.log(data);
-        const html = `<tr><td>${data.userId}</td><td>${data.name}</td><td>${data.emailId}</td><td>${data.phone}</td></tr>`;
+        const html = ` <tr>
+        <th>${userId}</th>
+        <th>${names}</th>
+        <th>${phonenumber}</th>
+      </tr><tr><td>${data.userId}</td><td>${data.name}</td><td>${data.emailId}</td><td>${data.phone}</td></tr>`;
         body.insertAdjacentHTML('beforeend', html);
     });
 
