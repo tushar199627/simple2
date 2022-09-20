@@ -2,7 +2,7 @@
 // console.log('Hi');
 
 const getData = async function () {
-    const response = await fetch(`https://backendtusharnew.herokuapp.com/getuser`);
+    const response = await fetch(`https://newtusharbarai.herokuapp.com/getuser`);
     const response_data = await response.json();
     // console.log(response_data.data);
     return response_data.data;
